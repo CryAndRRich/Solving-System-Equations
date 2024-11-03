@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename = 'script.js')}}"></script>
+    <title>Plot Selection</title>
+</head>
+<body>
+    <section id="create-box">
+        <input id="create-text" name="create" type="text" placeholder="Number of equations...">
+        <button id="create-button" onclick="createMatrix()">Create</button>
+    </section>
+
+    <form action="/plot" method="POST" id="create-equations">
+        <section id="system-of-equations">
+
+        </section>
+        
+        <select id="method" name="method" aria-placeholder="Choose a method">
+            <option value="Richardson Iteration">Richardson Iteration</option>
+            <option value="Jacobi Method">Jacobi Method</option>
+            <option value="Gauss Seidel Method">Gauss Seidel Method</option>
+            <option value="SOR (Successive over-relaxation)">SOR</option>
+        </select>
+        <button id="submit-button" type="button" onclick="Submit()">Plot</button>
+    </form>
+</body>
+</html>
