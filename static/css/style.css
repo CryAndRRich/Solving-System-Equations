@@ -1,0 +1,38 @@
+body {
+    margin: 5vw 12vw 5vw 12vw;
+    box-shadow: black 0 0 10px;
+    background: white;
+    padding: 10px;
+}
+
+#create-text {
+    width: 230px;
+}
+
+#create-text, #create-button, #method, #submit-button{
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#equation {
+    display: flex;
+    margin: 5px;
+}
+
+.error {
+    font-size: 20px;
+    margin: 5px;
+    color: red;
+}
+
+#entry {
+    width: 30px;
+    height: 20px;
+    margin: 2px;
+}
+
+#variable {
+    line-height: 0px;
+    font-family: sans-serif;
+}

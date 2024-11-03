@@ -1,0 +1,17 @@
+body {
+    margin: 5vw 12vw 5vw 12vw;
+    box-shadow: black 0 0 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#solution {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#accuracy {
+    font-size: 20px;
+    padding-bottom: -10px;
+}
