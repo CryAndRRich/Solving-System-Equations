@@ -53,12 +53,9 @@ def solveSLE(mat):
     new_mat = np.copy(mat)
     n = new_mat.shape[0]
     x = np.zeros((n, 1, 2), dtype=int)
-    if new_mat.shape[0] + 1 != new_mat.shape[1]:
-        return x, "Can't solve"
-    
     new_mat, rank = GaussELimination().Rank(new_mat)
     if rank != n:
-        return x, "Can't solve"
+        return x, "Infinite Solution"
 
     for i in range(n):
         x[i, 0, :] = [0, 1]
@@ -70,4 +67,5 @@ def solveSLE(mat):
         
         x[n - i, 0, :] = Operations(t, new_mat[n - i, n - i], 'div')
 
-    return x, 'Can solve'
+    return x, 'Unique Solution'
+
