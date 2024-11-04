@@ -20,8 +20,8 @@ def plot():
         except:
             break
     
-    if Solution(matrix)[0] == "Can't solve":
-        return render_template('error.html')
+    if len(Solution(matrix)) == 1:
+        return render_template('error.html', msg = Solution(matrix)[0])
 
     solution_str, solution, A = Solution(matrix)
 
@@ -33,5 +33,5 @@ def plot():
            'max_accuracy': max_accuracy,
            'solution_str': solution_str}
 
-    return render_template('plot.html', msg=msg)
+    return render_template('plot.html', msg = msg)
 
