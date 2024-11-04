@@ -67,5 +67,5 @@ def solveSLE(mat):
         
         x[n - i, 0, :] = Operations(t, new_mat[n - i, n - i], 'div')
 
-    return x, 'Unique Solution'
+    return x, "Unique Solution"
 
