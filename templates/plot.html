@@ -10,5 +10,13 @@
     <p id="solution"><strong>Solution:</strong> {{ msg['solution_str'] }}</p>
     <p id="accuracy"><strong>Max Accuracy:</strong> {{ msg['max_accuracy'] }}</p>
     <img id="plot" src="data:image/png;base64,{{ msg['image_data'] }}">
+    <br>
+    <button id="return-button" onclick="returnHomePage()">Return</button>
+
+    <script>
+        function returnHomePage() {
+            window.location.href = "/";
+        }
+    </script>
 </body>
 </html>
