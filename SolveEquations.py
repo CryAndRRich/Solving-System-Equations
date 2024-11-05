@@ -12,12 +12,11 @@ def Solution(elements):
     
     new_A = FloatToFrac(A)
     solution, str = solveSLE(new_A)
-    if str == "Infinite Solution":
+    if str != 'Unique Solution':
         return [str]
     
     solution_str = ''
     for i in range(n):
-        if solution[i, 0, 1] == 0:
-            return ["No Solution"]
         solution_str += f'x{i + 1} = {solution[i, 0, 0]}' + (f'/{solution[i, 0, 1]}' if solution[i, 0, 1] != 1 else '') + ('; ' if i != n - 1 else '')
+    
     return [solution_str, FracToFloat(solution), A]
