@@ -8,7 +8,7 @@ function createMatrix() {
     const matrix = document.getElementById('system-of-equations');
     if (isNaN(input.value) || Number(input.value) < 2 || Number(input.value) > 10) {
         const error = document.createElement('p');
-        error.innerHTML = isNaN(input.value) ? 'Please type in a number between 2 and 10!': 'The system must have at least 2 equations and at most 10 equations!';
+        error.innerHTML = 'Please type in a number between 2 and 10!';
         error.id = 'equation';
         error.className = 'error';
         matrix.appendChild(error);
