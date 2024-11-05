@@ -4,6 +4,8 @@ body {
     background: white;
     padding: 10px;
     text-align: center;
+    align-items: center;
+    position: relative;
 }
 
 #solution {
@@ -14,13 +16,12 @@ body {
 #accuracy {
     font-size: 22px;
     padding-bottom: -10px;
-    margin-bottom: -5px;
+    margin-bottom: 0px;
 }
 
 img {
-    width: 70%;
+    width: 75%;
     height: auto;
-    filter: contrast(120%);
 }
 
 #return-button {
