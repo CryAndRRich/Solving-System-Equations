@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
+
+{% block header %}
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
     <script type="text/javascript" src="{{url_for('static', filename = 'script.js')}}"></script>
-    <title>Plot Selection</title>
-</head>
-<body>
+{% endblock header %}
+
+{% block content %}
     <section id="create-box">
         <input id="create-text" name="create" type="text" placeholder="Number of equations...">
         <button id="create-button" onclick="createMatrix()">Create</button>
@@ -26,5 +24,4 @@
         </select>
         <button id="submit-button" type="button" onclick="Submit()">Plot</button>
     </form>
-</body>
-</html>
+{% endblock content %}
