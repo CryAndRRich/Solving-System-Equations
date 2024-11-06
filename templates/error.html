@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
+
+{% block header %}
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/error.css')}}">
-    <title>Plot Selection</title>
-</head>
-<body>
-    <p id="solution">The system has <strong>{{ msg }}</strong>!!!</p>
-</body>
-</html>
+{% endblock header %}
+
+{% block content %}
+    <p id="solution">The system has <strong>{{ msg }}</strong>!!!</p>   
+{% endblock content %}
+
