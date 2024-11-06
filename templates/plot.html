@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
+
+{% block header %}
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/plot.css')}}">
-    <title>Plot Selection</title>
-</head>
-<body>
+{% endblock header %}
+
+{% block content %}
     <p id="solution"><strong>Solution:</strong> {{ msg['solution_str'] }}</p>
     <p id="accuracy"><strong>Max Accuracy:</strong> {{ msg['max_accuracy'] }}</p>
     <img id="plot" src="data:image/png;base64,{{ msg['image_data'] }}">
@@ -18,5 +16,5 @@
             window.location.href = "/";
         }
     </script>
-</body>
-</html>
+{% endblock content %}
+
