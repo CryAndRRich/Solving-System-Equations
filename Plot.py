@@ -23,14 +23,18 @@ def Plot(method, start, end):
         accuracy[i - 1] = (sM.CosineSimilarity(x, end))
         max_accuracy = max(max_accuracy, accuracy[i - 1])
     
-    plt.figure()
-    plt.scatter(iterations, accuracy, s=2)
-    plt.title(f'Plot of {method}')
-    plt.xlabel('Number of Iterations')
-    plt.ylabel('Accuracy')
+    plt.figure(facecolor='black') 
+
+    plt.scatter(iterations, accuracy, s=1.5, color='red')  
+    plt.title(f'Plot of {method}', color='white', fontsize=14)  
+    plt.xlabel('Number of Iterations', color='white', fontsize=12)  
+    plt.ylabel('Accuracy', color='white', fontsize=12)  
+
+    plt.grid(color='gray', linestyle='--', linewidth=0.2) 
+    plt.tick_params(colors='white')  
 
     img = io.BytesIO()
-    plt.savefig(img, format='png')
+    plt.savefig(img, format='png', facecolor=plt.gcf().get_facecolor()) 
     img.seek(0)
 
     return [img, max_accuracy]
