@@ -1,18 +1,19 @@
-body {
-    margin: 5vw 12vw 5vw 12vw;
-    box-shadow: black 0 0 10px;
-    background: white;
-    padding: 10px;
-}
-
 #create-text {
     width: 230px;
 }
 
 #create-text, #create-button, #method, #submit-button{
     font-size: 18px;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 8px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+#create-text:hover, #create-button:hover, #method:hover, #submit-button:hover {
+    border-color: #1eff00;
 }
 
 #equation {
@@ -27,12 +28,22 @@ body {
 }
 
 #entry {
-    width: 30px;
+    width: 25px;
     height: 20px;
-    margin: 2px;
+    margin: 5px 3px 5px 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#entry:hover {
+    border-color: #1eff00;
 }
 
 #variable {
     line-height: 0px;
     font-family: sans-serif;
+    color: white;
 }
