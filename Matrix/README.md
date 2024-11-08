@@ -145,4 +145,12 @@ def SOR(self, A, x, k):
 
 Not all 4 methods can always calculate **approximate** solutions for **every** system of equations, the accuracy can even be **0%**. For **Richardson Iteration** and **SOR** methods, which require $\omega$, **choosing** appropriate $\omega$ also **contributes** to increasing **accuracy**
 
+Different methods yield **different results**. One method can achieve a **99.99999%** accuracy rate, while another may only reach **30-40%**, or even **0%**
+
 Moreover, depending on the **arrangement of equations**, each method can produce **wildly** varying results, from **complete failure** to **near-perfect** accuracy, or even completely **incorrect** solutions
+
+## Example
+#### Different methods yield different results:
+![Diff method](https://github.com/user-attachments/assets/ac8ae059-01c9-4a1f-b8c0-7b737344392f)
+#### Different arrangements of equations yield different results:
+![Diff arangement](https://github.com/user-attachments/assets/54b308d2-f7f1-4c2c-b62f-f31e770cd4b5)
