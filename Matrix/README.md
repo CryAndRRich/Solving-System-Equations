@@ -58,7 +58,7 @@ a_{11} & 0 & \cdots & 0 \\
 0 & 0 & \cdots & 0 \\
 a_{21} & 0 & \cdots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
-a_{1n} & a_{2n} & \cdots & 0 
+a_{n1} & a_{n2} & \cdots & 0 
 \end{pmatrix}\ \,\quad\quad U = 
 \begin{pmatrix}
 0 & a_{12} & \cdots & a_{1n} \\
