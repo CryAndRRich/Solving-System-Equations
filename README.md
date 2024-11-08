@@ -11,7 +11,7 @@ The project uses 3 main **libraries**: `Flask`, `NumPy`, and `Matplotlib`
 ## SolveEquations.py
 This file takes **user-provided data** and **transforms** it into a NumPy array to **represent** a system of equations
 
-Additionally, all NumPy arrays I use are **3-dimensional**, as I convert all numbers into **fractions**. This **ensures** that even if the solution to the system of equations is an **infinitely repeating decimal**, the result remains **accurate**
+Additionally, all NumPy arrays I use are **3-dimensional**, as I convert all numbers into **fractions**. This **ensures** that even if the solution to the system of equations is an **infinitely decimal**, the result remains **accurate**
 
 Then, the function `sovleSLE` is used to **accurately calculate** the solution of the system of equations and return the solution with a **statement** ("No Solution", "Unique Solution" or "Infinite Solution")
 
